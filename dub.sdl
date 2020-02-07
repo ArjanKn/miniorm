@@ -26,6 +26,6 @@ configuration "without-lib" {
 configuration "unittest" {
     targetType "executable"
     mainSourceFile "build/ut.d"
-    preBuildCommands "dub run unit-threaded -c gen_ut_main -- -f build/ut.d source/"
+    preBuildCommands "dub run unit-threaded -c gen_ut_main -- -f build/ut.d source"
     excludedSourceFiles "source/app.d"
 }
