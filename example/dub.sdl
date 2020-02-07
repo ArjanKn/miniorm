@@ -4,3 +4,16 @@ debugVersions "miniorm"
 dependency "miniorm" path=".."
 
 targetPath "build"
+targetType "executable"
+
+configuration "with-lib" {
+    subConfiguration "miniorm" "with-lib"
+}
+
+configuration "all-included" {
+    subConfiguration "miniorm" "all-included"
+}
+
+configuration "without-lib" {
+    subConfiguration "miniorm" "without-lib"
+}
